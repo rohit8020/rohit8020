@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+    font-family: Montserrat;
+}
+#myVideo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.container{
+    position: relative;
+    width: 100%;
+}
+.intro-div{
+    background-color: rgba(0, 0, 0, .7);
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+.intro-div img{
+    height: 60vh;
+    width: 25%;
+    min-width: 300px;
+    border: 10px solid white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px yellow,
+                -10px -10px 10px yellow;
+    /* border-radius: 5px; */
+}
+.intro h1{
+    display: block;
+    width: fit-content;
+    font-size: 3rem;
+    position: relative;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+    color: transparent;
+}
+.intro h1:nth-child(1){
+    animation-delay: 1s;
+}
+.intro h1:nth-child(2){
+    animation-delay: 2s;
+}
+.intro h1:nth-child(3){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 3s;
+}
+.intro h1 span{
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+}
+.intro h1:nth-child(1) span{
+    animation-delay: .5s;
+}
+.intro h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+.intro h1:nth-child(3) span{
+    animation-delay: 2.5s;
+}
+
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+}
+
+@keyframes text_reveal_name{
+    100%{
+        color: yellow;
+        font-weight: 700;
+    }
+}
+
+.education, .projects-div, .projects{
+    
+    height: 50vh;
+    background-color: rgb(15, 15, 15);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding:40px;
+    border-top: 10px solid yellow;
+}
+.education p{
+    margin: 0;
+    color: yellow;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.education h1{
+    color: yellow;
+    width: 20%;
+    border-bottom: 5px solid yellow;
+}
+.projects-div{
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border-top: 10px solid yellow;
+}
+.projects-div .title{
+    width: 100%;
+}
+.projects-div .title h1{
+    color: yellow;
+    border-bottom: 5px solid yellow;
+    width: 20%;
+    margin: 20px auto;
+}
+.projects-div .projects{
+    width: 100%;
+    height: auto;
+    background-color: rgb(51, 51, 51);
+    padding: 0;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-top: none;
+    margin-top: 20px;
+    flex-direction: row;
+}
+.projects-div .projects .project{
+    width: 30%;
+    height: 30vh;
+    margin-top: 30px;
+    background-color: rgb(15, 15, 15);
+    color: yellow;
+
+}
