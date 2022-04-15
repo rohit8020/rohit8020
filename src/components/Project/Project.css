@@ -1,14 +1,35 @@
-.project_container{
-    position: relative;
+.project_container {
+  position: relative;
+  height: auto;
+  background: linear-gradient(to right, red, purple);
+  width: 60%;
 }
 
-.project_content{
-    height: 400px;
+.project_img_tech_container {
+  background: linear-gradient(to right, red, purple);
+  height: 80%;
+  width: auto;
+  min-width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-10%, -50%);
 }
 
-.project_img_tech_container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.demo_link,
+.github_link {
+  background-image: linear-gradient(to right, red, purple);
+}
+
+.bg_slider {
+  color: white;
+  background-size: 200%;
+  transition: background-position 0.15s cubic-bezier(0.47, 0.1, 1, 0.63),
+    color 0.2s linear;
+  transition-delay: 0s, 0.15s;
+}
+
+.bg_slider:hover {
+  cursor: pointer;
+  background-position: -100%;
 }
