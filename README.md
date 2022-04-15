@@ -1,16 +1,40 @@
-### Hi there 👋
+# Vite + React + Tailwind CSS starter
 
-<!--
-**rohit8020/rohit8020** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Inspired by [posva's](https://github.com/posva) [vite-tailwind-starter](https://github.com/posva/vite-tailwind-starter)
 
-Here are some ideas to get you started:
+Note if you have access to [Tailwind UI](https://tailwindui.com), you can follow the following steps to add it:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+1. Install `@tailwindcss/ui`:
+
+```sh
+yarn add @tailwindcss/ui
+```
+
+2. Add the plugin in `tailwind.config.js` without changing anything else:
+
+```js
+// tailwind.config.js
+module.exports = {
+  // ...
+  // rest of the config
+  plugins: [require('@tailwindcss/ui')],
+}
+```
+
+## Installation
+
+```sh
+yarn
+```
+
+## Development
+
+```sh
+yarn dev
+```
+
+## Build
+
+```sh
+yarn build
+```

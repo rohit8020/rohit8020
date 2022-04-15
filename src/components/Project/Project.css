@@ -1,0 +1,14 @@
+.project_container{
+    position: relative;
+}
+
+.project_content{
+    height: 400px;
+}
+
+.project_img_tech_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
