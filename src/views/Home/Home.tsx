@@ -6,6 +6,7 @@ import twitterlogo from "../../images/twitter.png";
 import codecheflogo from "../../images/codechef.svg";
 import codeforceslogo from "../../images/codeforces.png";
 import rohitprofileimg from "../../images/rohit_profile_img.png";
+import leetcode from "../../images/leetcode.png";
 
 import "./Home.css";
 const Home = () => {
@@ -100,6 +101,13 @@ const Home = () => {
                 className="twitter_logo p-1"
                 src={twitterlogo}
                 alt="github"
+              />
+            </a>
+            <a href="https://leetcode.com/rohit8020/" target="_blank">
+              <img
+                className="leetcode_logo p-1"
+                src={leetcode}
+                alt="leetcode"
               />
             </a>
             <a href="https://www.codechef.com/users/rohit8020" target="_blank">

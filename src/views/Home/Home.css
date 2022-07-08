@@ -128,7 +128,8 @@
 .rohit_img_1 img.linkedin_logo,
 .rohit_img_1 img.twitter_logo,
 .rohit_img_1 img.codechef_logo,
-.rohit_img_1 img.codeforces_logo
+.rohit_img_1 img.codeforces_logo,
+.rohit_img_1 img.leetcode_logo
 {
     position: absolute;
     height: 70px;
@@ -167,6 +168,13 @@
     top: 10px;
     left: 275px;
     background-color: #f46b45;
+    animation-delay: .2s;
+}
+
+.rohit_img_1 img.leetcode_logo{
+    top: 264px;
+    left: -194px;
+    background-color: #3a3230;
     animation-delay: .2s;
 }
 
@@ -238,6 +246,7 @@
   width: 100%;
   height: 120%;
   transform: rotate(-45deg);
+  z-index: -1000;
 }
 
 .star {
