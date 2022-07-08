@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import rohit8020 from '../images/rohit8020.png'
 
+import "./Nav.css";
 const Nav = () => {
   const [showProfileMenu, setShowProfileMenu] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
@@ -20,7 +21,7 @@ const Nav = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center justify-center">
-            <div className="p-10">
+            <div className="logo p-10">
               <img
                 className="h-40 w-full"
                 src={rohit8020}

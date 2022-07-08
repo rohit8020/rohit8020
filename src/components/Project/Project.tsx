@@ -12,7 +12,7 @@ interface project {
 
 function Project(props: project) {
   return (
-    <div className=" mx-auto flex justify-start w-4/5 mt-20">
+    <div className="main_container mx-auto flex justify-start w-4/5 mt-20">
       <div className="project_container flex justify-center p-1 rounded-md">
         <div className="project_content_container p-5 flex flex-col justify-between h-full w-full bg-gray-800 rounded-md text-white">
           <div>
@@ -34,7 +34,7 @@ function Project(props: project) {
           </div>
           <div className="technologies flex flex-row gap-1 items-center h-1/5 pl-2 bg-white">
             {props.technology.map((tech: any) => (
-              <Technology tech={tech} />
+              <Technology key={Math.floor(Math.random()*10000000)} tech={tech} />
             ))}
           </div>
         </div>

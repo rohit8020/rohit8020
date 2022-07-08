@@ -53,7 +53,7 @@ const Projects = () => {
       <main>
         <div className="projects mt-20">
           {projects.map((project: pjct) => (
-            <Project {...project} />
+            <Project key={Math.floor(Math.random()*10000000)} {...project} />
           ))}
         </div>
       </main>
