@@ -21,8 +21,11 @@ import rohit_profile_img from "../images/rohit_profile_img.png";
 import twitter from "../images/twitter.png";
 import codechef from "../images/codechef.svg";
 import leetcode from "../images/leetcode.png";
+import redux from "../images/redux.png";
+import googleconsole from "../images/googleconsole.png";
 
 export default  {
+  googleconsole,
   link,
   codechef,
   codeforces,
@@ -45,5 +48,6 @@ export default  {
   mysql,
   html,
   nodejs,
-  leetcode
+  leetcode,
+  redux
 };

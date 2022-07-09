@@ -42,14 +42,14 @@
     width: 80%;
     min-width: 60%;
     position: absolute;
-    top: 113%;
+    top: 120%;
     left: 16%;
     transform: translate(-6%, -50%);
   }
 
   .project_content_container{
     align-items:center;
-    text-align:center;
+    text-align:left;
   }
   .project_container{
     width: 90%;
@@ -68,7 +68,7 @@
   }
   .project_img_tech_container {
     width: 90%;
-    top: 113%;
+    top: 116%;
     left: 5%;
     transform: translate(0%, -50%);
     height: 60%;
@@ -76,8 +76,9 @@
 
   .project_content_container{
     padding:10px;
-    align-items:center;
-    text-align:center;
+    text-align: left;
+    /* align-items:center; */
+    /* text-align:center; */
   }
   .project_container{
     width: 100%;

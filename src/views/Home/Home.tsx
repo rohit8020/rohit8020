@@ -155,6 +155,10 @@ const Home = () => {
             </div>
           </div>
         </div>  
+
+        <div className="contact h-28 mx-auto w-11/12 text-center text-white text-lg">
+            <p>Contact Me at : <a href="mailto:rohitgangwar8020@gmail.com" target="_blank">rohitgangwar8020@gmail.com</a> </p>
+        </div>
       </main>
     </React.Fragment>
   );

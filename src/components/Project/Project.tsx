@@ -17,7 +17,7 @@ function Project(props: project) {
         <div className="project_content_container p-5 flex flex-col justify-between h-full w-full bg-gray-800 rounded-md text-white">
           <div>
           <h1 className="project_name text-5xl">{props.name}</h1>
-          <p className="project_content mt-7 text-1xl pr-10">{props.content}</p>
+          <div className="project_content mt-7 text-1xl pr-10">{props.content}</div>
           </div>
           <div className="links flex gap-10 mt-10">
           <div className="demo_link bg_slider p-1 rounded">
@@ -34,7 +34,7 @@ function Project(props: project) {
           </div>
           <div className="technologies flex flex-row gap-1 items-center h-1/5 pl-2 bg-white">
             {props.technology.map((tech: any) => (
-              <Technology key={Math.floor(Math.random()*10000000)} tech={tech} />
+              <Technology key={Math.floor(Math.random() *1000000000000).toString()} tech={tech} />
             ))}
           </div>
         </div>
