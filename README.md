@@ -9,7 +9,7 @@
 
 - 🌱 I’m currently learning **React.js, Node.js, MongoDB, Express.js, Java, SQL etc.**
 
-- 👨‍💻 All of my projects are available at [http://rohit8020.netlify.app/](http://rohit8020.netlify.app/)
+- 👨‍💻 All of my projects are available at [https://rohitgangwar.me/](https://rohitgangwar.me/)
 
 - 💬 Ask me about **React.js, Node.js, MongoDB, Express.js, Java, SQL etc.**
 
