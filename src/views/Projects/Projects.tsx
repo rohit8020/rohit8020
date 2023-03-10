@@ -36,7 +36,7 @@ const Projects = () => {
       </div>,
       ],
       github: "https://github.com/rohit8020/knitsales",
-      link: "https://knitsales.herokuapp.com/",
+      link: "https://knitsales.up.railway.app/",
       name: "KNITSALES",
       technology: [
         Images.nodejs,
@@ -72,7 +72,7 @@ const Projects = () => {
       </div>,
       ],
       github: "https://github.com/rohit8020/IPTV_app",
-      link: "https://rohitiptvapp.herokuapp.com/",
+      link: "https://iptvapp.up.railway.app/",
       name: "IP-TV",
       technology: [
         Images.expressjs,
@@ -202,7 +202,7 @@ const Projects = () => {
       </div>,
       ],
       github: "https://github.com/rohit8020/CRUD_Frontend_Socket.IO_React",
-      link: "https://goofy-wright-49949c.netlify.app/",
+      link: "https://rtcrud.netlify.app/",
       name: "Realtime CRUD App",
       technology: [
         Images.nodejs,
