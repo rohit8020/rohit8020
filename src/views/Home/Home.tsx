@@ -12,59 +12,6 @@ import "./Home.css";
 const Home = () => {
   return (
     <React.Fragment>
-      <div className="stars">
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-      </div>
-
       <main>
         <div className="landing_page flex justify-between items-center mt-24">
           <div className="introduction flex flex-col ml-10 mb-40 justify-between">
@@ -76,8 +23,9 @@ const Home = () => {
             </div>
 
             <div className="main_headline mt-2">
-              MERN Developer, Algorithms <br /> Expert & Competitive <br />{" "}
-              Programmer.
+              Ex-SDE Intern @AnaStrat <br /> ICPC Regionalist'22 <br />
+              MERN Stack Developer <br/>
+              Competitive Programmer
             </div>
           </div>
 
@@ -132,25 +80,37 @@ const Home = () => {
             <div className="flex space-x-2">
               <p>🟤</p>
               <p>
-              Hello, I'm Rohit Gangwar. Currently, I am a final year student pursuing a Bachelor of Technology in Information Technology at Kamla Nehru Institute of Technology, Sultanpur.
+              Hello there! I am a recent graduate from Kamla Nehru Institute of Technology, specializing in Information Technology. Throughout my academic journey, I have gained valuable knowledge and hands-on experience in various aspects of web development.
               </p>
             </div>
             <div className="flex space-x-2">
               <p>🟤</p>
               <p>
-              I am an MERN Stack Developer and have designed and built so many apps and websites for personal, group, and college projects. I am also a competitive programmer on Codechef, Codeforces, and Leetcode. I am very passionate about learning new Technologies, Algorithms and Data Structures.
+              During my time as a full-stack intern, I primarily focused on backend development. I had the opportunity to work with cutting-edge technologies such as Node.js and Express.js to build and consume RESTful APIs. Additionally, I utilized MongoDB to design and implement efficient data models for the projects I worked on.
               </p>
             </div>
             <div className="flex space-x-2">
               <p>🟤</p>
               <p>
-              It is my pleasure to be a member of Programming Club KNIT. I am making the website for the club. Additionally, I have taken workshops on Web Development and taught it to juniors from my college. 
+              One of the notable projects I contributed to was a trading platform. This platform involved real-time updates to market data, customer management, and order placement. Furthermore, I was involved in the development of a CRM system that included lead management, customer tracking, and sales forecasting. I also had the chance to work on a trading platform with course management and tracking features.
               </p>
             </div>
             <div className="flex space-x-2">
               <p>🟤</p>
               <p>
-              As well as being a developer, I contribute to Open Source projects. It was my pleasure to contribute to Hacktober Fest and other open source organizations.
+              Throughout my internships, I consistently delivered results by developing new features and resolving bugs within tight deadlines. Collaborating with cross-functional teams, I actively contributed to enhancing the overall code quality of three projects.
+              </p>
+            </div>
+            <div className="flex space-x-2">
+              <p>🟤</p>
+              <p>
+              In addition to my academic and professional experience, I am also an avid competitive programmer. I enjoy participating in coding competitions and solving algorithmic challenges. This passion for competitive programming has honed my problem-solving skills, strengthened my understanding of data structures and algorithms, and taught me to write efficient and optimized code.
+              </p>
+            </div>
+            <div className="flex space-x-2">
+              <p>🟤</p>
+              <p>
+              I am passionate about leveraging technology to create innovative solutions and enhance user experiences. With my solid foundation in web development and dedication to continuous learning, I am excited to embark on new professional opportunities and contribute to the ever-evolving field of Information Technology.
               </p>
             </div>
           </div>
