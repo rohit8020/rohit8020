@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Rohit Gangwar</h1>
-<h3 align="center">MERN stack Developer, Competitive Programmer and Problem Solver.</h3>
+<h3 align="center">Ex-SDE Intern @AnaStrat, ICPC Regionalist, MERN Stack Developer, Competitive Programmer.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=rohit8020&label=Profile%20views&color=0e75b6&style=flat" alt="rohit8020" /> </p>
 
@@ -9,7 +9,7 @@
 
 - 🌱 I’m currently learning **React.js, Node.js, MongoDB, Express.js, Java, SQL etc.**
 
-- 👨‍💻 All of my projects are available at [https://rohitgangwar.me/](https://rohitgangwar.me/)
+- 👨‍💻 All of my projects are available at [https://rohitgangwar.netlify.app/](https://rohitgangwar.netlify.app/)
 
 - 💬 Ask me about **React.js, Node.js, MongoDB, Express.js, Java, SQL etc.**
 
