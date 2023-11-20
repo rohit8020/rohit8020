@@ -14,6 +14,102 @@ interface pjct {
 const Projects = () => {
   let projects = [
     {
+      img: "https://user-images.githubusercontent.com/76878634/178099905-c135297d-6bd3-4324-8506-846150b161ed.png",
+      content: [
+        <div className="flex space-x-3 my-3">
+          <p>🟤</p>{" "}
+          <p>
+            This is a <b>Burger Builder Application</b> in which you can make the Burger according to your wish.
+          </p>
+        </div>,
+        <div className="flex space-x-3 my-3">
+          <p>🟤</p>{" "}
+          <p>
+            You can add the ingredients you want to add and can remove according to your choice.
+          </p>
+        </div>,
+        <div className="flex space-x-3 my-3">
+        <p>🟤</p>{" "}
+        <p>
+          This application was created using <b>React.js, Redux, Firebase, HTML, CSS, JavaScript.</b> .
+        </p>
+      </div>
+      ],
+      github: "https://github.com/rohit8020/burger-builder-app",
+      link: "https://burger-builder-30783.web.app/",
+      name: "Burger Builder App",
+      technology: [
+        Images.reactjs,
+        Images.redux,
+        Images.firebase,
+        Images.html,
+        Images.css,
+        Images.javascript,
+      ],
+    },
+    {
+      img: "https://user-images.githubusercontent.com/76878634/177907251-b773fda1-d273-4da1-84b0-c396ebf9c3ed.png",
+      content: [
+        <div className="flex space-x-3 my-3">
+          <p>🟤</p>{" "}
+          <p>
+            This is the clone of the <a href="https://seekho.ai/" style={{'color':'skyblue','fontWeight':'bold'}}>seekho.ai</a> website.
+          </p>
+        </div>,
+        <div className="flex space-x-3">
+          <p>🟤</p>{" "}
+          <p>
+            I used <b>React.js library</b> to create this project and <b>HTML, CSS, and JavaScript</b> also.
+          </p>
+        </div>,
+      ],
+      github: "https://github.com/rohit8020/seekho.ai_clone",
+      link: "https://capable-gelato-f80083.netlify.app/",
+      name: "Seekho.ai Clone",
+      technology: [
+        Images.git,
+        Images.javascript,
+        Images.reactjs,
+        Images.git,
+        Images.html,
+        Images.css,
+      ],
+    },
+    {
+      img: "https://user-images.githubusercontent.com/76878634/178085555-187dcafb-f15a-419c-8349-7242940a2293.png",
+      content: [
+        <div className="flex space-x-3 my-3">
+          <p>🟤</p>{" "}
+          <p>
+            This is a <b>Remote Notes Taking Application</b>.
+          </p>
+        </div>,
+        <div className="flex space-x-3 my-3">
+          <p>🟤</p>{" "}
+          <p>
+            You can <b>access your notes from anywhere online.</b>
+          </p>
+        </div>,
+        <div className="flex space-x-3 my-3">
+        <p>🟤</p>{" "}
+        <p>
+          I used <b>React.js and Firebase</b> to create this project.
+        </p>
+      </div>,
+      ],
+      github: "https://github.com/rohit8020/Skyscribe",
+      link: "https://skyyscribe.netlify.app/",
+      name: "Skyscribe",
+      technology: [
+        Images.firebase,
+        Images.reactjs,
+        Images.html,
+        Images.css,
+        Images.git,
+        Images.javascript,
+      ],
+    },
+    {
       img: "https://user-images.githubusercontent.com/76878634/178085755-99821c46-1318-4836-b3b9-81eb0ea4e0fc.png",
       content: [
         <div className="flex space-x-3 my-3">
@@ -81,102 +177,6 @@ const Projects = () => {
         Images.css,
         Images.git,
         Images.javascript,
-      ],
-    },
-    {
-      img: "https://user-images.githubusercontent.com/76878634/178085555-187dcafb-f15a-419c-8349-7242940a2293.png",
-      content: [
-        <div className="flex space-x-3 my-3">
-          <p>🟤</p>{" "}
-          <p>
-            This is a <b>Remote Notes Taking Application</b>.
-          </p>
-        </div>,
-        <div className="flex space-x-3 my-3">
-          <p>🟤</p>{" "}
-          <p>
-            You can <b>access your notes from anywhere online.</b>
-          </p>
-        </div>,
-        <div className="flex space-x-3 my-3">
-        <p>🟤</p>{" "}
-        <p>
-          I used <b>React.js and Firebase</b> to create this project.
-        </p>
-      </div>,
-      ],
-      github: "https://github.com/rohit8020/Skyscribe",
-      link: "https://skyyscribe.netlify.app/",
-      name: "Skyscribe",
-      technology: [
-        Images.firebase,
-        Images.reactjs,
-        Images.html,
-        Images.css,
-        Images.git,
-        Images.javascript,
-      ],
-    },
-    {
-      img: "https://user-images.githubusercontent.com/76878634/178099905-c135297d-6bd3-4324-8506-846150b161ed.png",
-      content: [
-        <div className="flex space-x-3 my-3">
-          <p>🟤</p>{" "}
-          <p>
-            This is a <b>Burger Builder Application</b> in which you can make the Burger according to your wish.
-          </p>
-        </div>,
-        <div className="flex space-x-3 my-3">
-          <p>🟤</p>{" "}
-          <p>
-            You can add the ingredients you want to add and can remove according to your choice.
-          </p>
-        </div>,
-        <div className="flex space-x-3 my-3">
-        <p>🟤</p>{" "}
-        <p>
-          This application was created using <b>React.js, Redux, Firebase, HTML, CSS, JavaScript.</b> .
-        </p>
-      </div>
-      ],
-      github: "https://github.com/rohit8020/burger-builder-app",
-      link: "https://burger-builder-30783.web.app/",
-      name: "Burger Builder App",
-      technology: [
-        Images.reactjs,
-        Images.redux,
-        Images.firebase,
-        Images.html,
-        Images.css,
-        Images.javascript,
-      ],
-    },
-    {
-      img: "https://user-images.githubusercontent.com/76878634/177907251-b773fda1-d273-4da1-84b0-c396ebf9c3ed.png",
-      content: [
-        <div className="flex space-x-3 my-3">
-          <p>🟤</p>{" "}
-          <p>
-            This is the clone of the <a href="https://seekho.ai/" style={{'color':'skyblue','fontWeight':'bold'}}>seekho.ai</a> website.
-          </p>
-        </div>,
-        <div className="flex space-x-3">
-          <p>🟤</p>{" "}
-          <p>
-            I used <b>React.js library</b> to create this project and <b>HTML, CSS, and JavaScript</b> also.
-          </p>
-        </div>,
-      ],
-      github: "https://github.com/rohit8020/seekho.ai_clone",
-      link: "https://capable-gelato-f80083.netlify.app/",
-      name: "Seekho.ai Clone",
-      technology: [
-        Images.git,
-        Images.javascript,
-        Images.reactjs,
-        Images.git,
-        Images.html,
-        Images.css,
       ],
     },
     {
