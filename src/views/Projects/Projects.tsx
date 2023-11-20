@@ -105,9 +105,9 @@ const Projects = () => {
         </p>
       </div>,
       ],
-      github: "https://github.com/rohit8020/ANYPLACE-NOTES",
-      link: "https://anyplacenotes.netlify.app/",
-      name: "Anyplace Notes App",
+      github: "https://github.com/rohit8020/Skyscribe",
+      link: "https://skyyscribe.netlify.app/",
+      name: "Skyscribe",
       technology: [
         Images.firebase,
         Images.reactjs,
