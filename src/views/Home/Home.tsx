@@ -1,126 +1,244 @@
 import React from "react";
-import rohitphoto1 from "../../images/rohit_img_1.png";
-import githublogo from "../../images/github.png";
-import linkedinlogo from "../../images/linkedin.png";
-import twitterlogo from "../../images/twitter.png";
-import codecheflogo from "../../images/codechef.svg";
-import codeforceslogo from "../../images/codeforces.png";
-import rohitprofileimg from "../../images/rohit_profile_img.png";
-import leetcode from "../../images/leetcode.png";
+import { Link } from "react-router-dom";
+
+import { resumeData } from "../../data/resume";
+import rohitProfileImage from "../../images/rohit_profile_img.png";
 
 import "./Home.css";
+
+const [featuredProject] = resumeData.featuredWork;
+
 const Home = () => {
   return (
-    <React.Fragment>
-      <main>
-        <div className="landing_page flex justify-between items-center mt-24">
-          <div className="introduction flex flex-col ml-10 mb-40 justify-between">
-            <div className="name_heading flex flex-col items-start">
-              <div className="rohit_profile_img flex justify-center">
-                <img src={rohitprofileimg} alt=".</rohit8020>" />
+    <main className="home-page">
+      <section className="hero-section surface-panel">
+        <div className="hero-grid">
+          <div className="hero-copy">
+            <p className="section-kicker">Backend Software Engineer</p>
+            <h1 className="hero-title">{resumeData.name}</h1>
+            <p className="hero-summary">{resumeData.summary}</p>
+
+            <div className="focus-list" aria-label="Primary focus areas">
+              {resumeData.focusAreas.map((area) => (
+                <span className="pill" key={area}>
+                  {area}
+                </span>
+              ))}
+            </div>
+
+            <div className="hero-actions">
+              <Link className="primary-action" to="/projects">
+                View selected work
+              </Link>
+              <a className="secondary-action" href={`mailto:${resumeData.email}`}>
+                Email me
+              </a>
+            </div>
+
+            <div className="social-links">
+              {resumeData.socialLinks.map((link) => (
+                <a
+                  key={link.id}
+                  className="social-link"
+                  href={link.href}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <aside className="hero-card">
+            <div className="hero-avatar">
+              <img src={rohitProfileImage} alt="Rohit Gangwar" />
+            </div>
+            <p className="hero-card-label">Current focus</p>
+            <h2 className="hero-card-title">
+              Spring Boot systems, cloud-native delivery, and production GenAI
+            </h2>
+            <p className="hero-card-text">
+              Building APIs, microservices, and agentic workflows that balance
+              performance, reliability, and developer velocity.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section className="content-section">
+        <div className="section-heading">
+          <p className="section-kicker">Impact</p>
+          <h2 className="section-title">Delivery metrics from recent work</h2>
+        </div>
+
+        <div className="metric-grid">
+          {resumeData.impactMetrics.map((metric) => (
+            <article className="metric-card surface-panel" key={metric.id}>
+              <p className="metric-value">{metric.value}</p>
+              <h3 className="metric-label">{metric.label}</h3>
+              <p className="metric-detail">{metric.detail}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="content-section">
+        <div className="section-heading">
+          <p className="section-kicker">Experience</p>
+          <h2 className="section-title">Recent roles and shipped systems</h2>
+        </div>
+
+        <div className="experience-list">
+          {resumeData.experience.map((role) => (
+            <article className="timeline-card surface-panel" key={role.id}>
+              <div className="timeline-header">
+                <div>
+                  <p className="timeline-company">{role.company}</p>
+                  <h3 className="timeline-role">{role.role}</h3>
+                </div>
+                <div className="timeline-meta">
+                  <span>{role.period}</span>
+                  <span>{role.location}</span>
+                </div>
               </div>
-              <h1 className="rohit_name mt-8">Rohit Gangwar</h1>
+
+              <ul className="bullet-list">
+                {role.bullets.map((bullet) => (
+                  <li key={bullet}>{bullet}</li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="content-section">
+        <div className="section-heading">
+          <p className="section-kicker">Featured Project</p>
+          <h2 className="section-title">{featuredProject.title}</h2>
+        </div>
+
+        <article className="featured-project surface-panel">
+          <div className="featured-project-copy">
+            <p className="featured-meta">
+              {featuredProject.category} | {featuredProject.period}
+            </p>
+            <p className="featured-summary">{featuredProject.summary}</p>
+
+            <div className="stack-list" aria-label="Featured project stack">
+              {featuredProject.stack.map((tech) => (
+                <span className="pill" key={tech}>
+                  {tech}
+                </span>
+              ))}
             </div>
 
-            <div className="main_headline mt-2">
-              Ex-SDE Intern @AnaStrat <br /> ICPC Regionalist'22 <br />
-              MERN Stack Developer <br/>
-              Competitive Programmer
-            </div>
+            <ul className="bullet-list">
+              {featuredProject.bullets.map((bullet) => (
+                <li key={bullet}>{bullet}</li>
+              ))}
+            </ul>
           </div>
 
-          <div className="rohit_img_1 mr-44">
-            <img src={rohitphoto1} alt=".</rohit8020>" />
-            <a href="https://github.com/rohit8020" target="_blank">
-              <img className="github_logo p-1" src={githublogo} alt="github" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/rohit-gangwar-9b65281b4/"
-              target="_blank"
-            >
-              <img
-                className="linkedin_logo p-1"
-                src={linkedinlogo}
-                alt="github"
-              />
-            </a>
-            <a href="https://twitter.com/rohit_8020" target="_blank">
-              <img
-                className="twitter_logo p-1"
-                src={twitterlogo}
-                alt="github"
-              />
-            </a>
-            <a href="https://leetcode.com/rohit8020/" target="_blank">
-              <img
-                className="leetcode_logo p-1"
-                src={leetcode}
-                alt="leetcode"
-              />
-            </a>
-            <a href="https://www.codechef.com/users/rohit8020" target="_blank">
-              <img
-                className="codechef_logo p-1"
-                src={codecheflogo}
-                alt="codechef"
-              />
-            </a>
-            <a href="https://codeforces.com/profile/rohit8020" target="_blank">
-              <img
-                className="codeforces_logo p-1"
-                src={codeforceslogo}
-                alt="codeforces"
-              />
-            </a>
+          <div className="featured-project-results">
+            <h3 className="results-title">Outcome highlights</h3>
+            <div className="outcome-list">
+              {featuredProject.outcomes.map((outcome) => (
+                <span className="outcome-pill" key={outcome}>
+                  {outcome}
+                </span>
+              ))}
+            </div>
+            <Link className="text-link" to="/projects">
+              Explore selected work
+            </Link>
+          </div>
+        </article>
+      </section>
+
+      <section className="content-section">
+        <div className="section-heading">
+          <p className="section-kicker">Skills</p>
+          <h2 className="section-title">Core technologies and strengths</h2>
+        </div>
+
+        <div className="skills-grid">
+          {resumeData.skillGroups.map((group) => (
+            <article className="skill-card surface-panel" key={group.id}>
+              <h3 className="skill-title">{group.title}</h3>
+              <div className="tag-list">
+                {group.items.map((item) => (
+                  <span className="tag" key={item}>
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="content-section summary-grid">
+        <div>
+          <div className="section-heading">
+            <p className="section-kicker">Achievements</p>
+            <h2 className="section-title">
+              Competitive and community milestones
+            </h2>
+          </div>
+
+          <div className="achievement-list">
+            {resumeData.achievements.map((achievement) => (
+              <article
+                className="achievement-card surface-panel"
+                key={achievement.id}
+              >
+                <p>{achievement.text}</p>
+              </article>
+            ))}
           </div>
         </div>
-        <div className="about flex flex-col items-center justify-center my-5 text-white ">
-          <h1 className=" text-6xl ">About Me</h1>
-          <div className="about_me flex flex-col space-y-6 items-center m-16 text-2xl text-justify card px-12 py-10">
-            <div className="flex space-x-2">
-              <p>🟤</p>
-              <p>
-              Hello there! I am a recent graduate from Kamla Nehru Institute of Technology, specializing in Information Technology. Throughout my academic journey, I have gained valuable knowledge and hands-on experience in various aspects of web development.
-              </p>
-            </div>
-            <div className="flex space-x-2">
-              <p>🟤</p>
-              <p>
-              During my time as a full-stack intern, I primarily focused on backend development. I had the opportunity to work with cutting-edge technologies such as Node.js and Express.js to build and consume RESTful APIs. Additionally, I utilized MongoDB to design and implement efficient data models for the projects I worked on.
-              </p>
-            </div>
-            <div className="flex space-x-2">
-              <p>🟤</p>
-              <p>
-              One of the notable projects I contributed to was a trading platform. This platform involved real-time updates to market data, customer management, and order placement. Furthermore, I was involved in the development of a CRM system that included lead management, customer tracking, and sales forecasting. I also had the chance to work on a trading platform with course management and tracking features.
-              </p>
-            </div>
-            <div className="flex space-x-2">
-              <p>🟤</p>
-              <p>
-              Throughout my internships, I consistently delivered results by developing new features and resolving bugs within tight deadlines. Collaborating with cross-functional teams, I actively contributed to enhancing the overall code quality of three projects.
-              </p>
-            </div>
-            <div className="flex space-x-2">
-              <p>🟤</p>
-              <p>
-              In addition to my academic and professional experience, I am also an avid competitive programmer. I enjoy participating in coding competitions and solving algorithmic challenges. This passion for competitive programming has honed my problem-solving skills, strengthened my understanding of data structures and algorithms, and taught me to write efficient and optimized code.
-              </p>
-            </div>
-            <div className="flex space-x-2">
-              <p>🟤</p>
-              <p>
-              I am passionate about leveraging technology to create innovative solutions and enhance user experiences. With my solid foundation in web development and dedication to continuous learning, I am excited to embark on new professional opportunities and contribute to the ever-evolving field of Information Technology.
-              </p>
-            </div>
-          </div>
-        </div>  
 
-        <div className="contact h-28 mx-auto w-11/12 text-center text-white text-lg">
-            <p>Contact Me at : <a href="mailto:rohitgangwar8020@gmail.com" target="_blank">rohitgangwar8020@gmail.com</a> </p>
+        <div>
+          <div className="section-heading">
+            <p className="section-kicker">Education</p>
+            <h2 className="section-title">Academic foundation</h2>
+          </div>
+
+          {resumeData.education.map((item) => (
+            <article className="education-card surface-panel" key={item.id}>
+              <p className="education-school">{item.institution}</p>
+              <h3 className="education-degree">{item.degree}</h3>
+              <p className="education-meta">
+                {item.period} | {item.location}
+              </p>
+              <div className="tag-list">
+                {item.details.map((detail) => (
+                  <span className="tag" key={detail}>
+                    {detail}
+                  </span>
+                ))}
+              </div>
+            </article>
+          ))}
         </div>
-      </main>
-    </React.Fragment>
+      </section>
+
+      <section className="contact-section surface-panel">
+        <p className="section-kicker">Contact</p>
+        <h2 className="section-title">
+          Open to backend, platform, and GenAI engineering work
+        </h2>
+        <p className="contact-text">
+          Reach out for roles and collaborations involving scalable APIs,
+          distributed systems, cloud-native delivery, or AI-native product work.
+        </p>
+        <a className="primary-action" href={`mailto:${resumeData.email}`}>
+          {resumeData.email}
+        </a>
+      </section>
+    </main>
   );
 };
 

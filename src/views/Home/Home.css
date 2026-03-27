@@ -1,234 +1,280 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-.rohit_img_1 {
-  height: 400px;
-  width: 350px;
-  max-width: 400px;
-  min-width: 320px;
-  position: relative;
+.home-page {
+  width: min(1120px, calc(100% - 1.5rem));
+  margin: 0 auto;
+  padding: 2.3rem 0 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
-@media screen and (max-width: 1200px) {
-  .rohit_img_1{
-    transform: scale(.7);
-    margin-right: 50px;
-    margin-top: 30px;
-  }
+.hero-section {
+  padding: clamp(1.5rem, 3vw, 2.4rem);
+}
 
-  .introduction{
-    transform: scale(.8);
-    margin-left: -10px;
-    margin-top: 30px;
-  }
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.95fr);
+  gap: 1.6rem;
+  align-items: center;
+}
 
-  .about_me{
-    font-size: 1.3rem;
-    font-weight: 400;
-    width: 90%;
-    padding: 30px;
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 5rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.hero-summary {
+  max-width: 62ch;
+  color: var(--text-secondary);
+  font-size: 1.04rem;
+  line-height: 1.8;
+}
+
+.focus-list,
+.hero-actions,
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 100%;
+  padding: 1.6rem;
+  background:
+    radial-gradient(circle at top right, rgba(251, 191, 36, 0.14), transparent 28%),
+    linear-gradient(180deg, rgba(13, 30, 55, 0.92), rgba(10, 20, 37, 0.88));
+}
+
+.hero-avatar {
+  width: 8.5rem;
+  height: 8.5rem;
+  overflow: hidden;
+  border: 1px solid rgba(251, 191, 36, 0.32);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.hero-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-card-label {
+  color: var(--accent-warm);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hero-card-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2vw, 1.95rem);
+  line-height: 1.15;
+}
+
+.hero-card-text {
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.metric-card,
+.timeline-card,
+.featured-project,
+.skill-card,
+.achievement-card,
+.education-card,
+.contact-section {
+  padding: 1.45rem;
+}
+
+.metric-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.metric-value {
+  color: var(--accent-warm);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  line-height: 1;
+}
+
+.metric-label {
+  font-size: 1.05rem;
+}
+
+.metric-detail {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.experience-list {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.timeline-company {
+  color: var(--accent-cool);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.timeline-role {
+  margin-top: 0.35rem;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+}
+
+.timeline-meta {
+  display: grid;
+  gap: 0.2rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  text-align: right;
+}
+
+.featured-project {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.8fr);
+  gap: 1.5rem;
+}
+
+.featured-project-copy,
+.featured-project-results {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skill-title {
+  font-family: var(--font-display);
+  font-size: 1.18rem;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.achievement-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.education-school {
+  color: var(--accent-cool);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.education-degree {
+  margin: 0.45rem 0 0.7rem;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+}
+
+.education-meta {
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1040px) {
+  .metric-grid,
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media screen and (max-width: 1050px) {
-  .rohit_img_1{
-    transform: scale(.675);
-    margin-right: 50px;
+@media screen and (max-width: 860px) {
+  .hero-grid,
+  .featured-project,
+  .summary-grid {
+    grid-template-columns: 1fr;
   }
 
-  .introduction{
-    transform: scale(.765);
-    margin-left: -10px;
-  }
-
-  .about_me{
-    font-size: 1.1rem;
-    font-weight: 500;
-    padding: 25px;
-  }
-}
-
-@media screen and (max-width: 850px){
-  .landing_page{
+  .timeline-header {
     flex-direction: column;
   }
-  .introduction{
-    transform: scale(1);
-    margin-left: -10px;
-  }
-  .rohit_img_1{
-    transform: scale(.8);
-    margin-left: 60px;
-  }
 
-  .about_me{
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 20px;
+  .timeline-meta {
+    text-align: left;
   }
 }
 
-@media screen and (max-width: 650px){
-  .introduction{
-    text-align: center;
-    margin-left: 10px;
-    margin-bottom: 12px;
+@media screen and (max-width: 640px) {
+  .home-page {
+    padding-top: 1.6rem;
+    gap: 2rem;
   }
 
-  .rohit_profile_img{
-    transform:scale(1.35);
+  .hero-title {
+    font-size: clamp(2.45rem, 15vw, 3.5rem);
   }
 
-  .rohit_name{
-    margin-top: 50px;
-    margin-bottom: 20px;
-  }
-  .rohit_img_1{
-    transform: scale(.5);
-    margin-left: 100px;
+  .metric-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 
-  .about_me{
-    width: 85%;
-    line-height: 1.2;
-    text-align: justify;
+  .hero-card,
+  .metric-card,
+  .timeline-card,
+  .featured-project,
+  .skill-card,
+  .achievement-card,
+  .education-card,
+  .contact-section {
+    padding: 1.25rem;
   }
-
-}
-
-.rohit_img_1::before {
-  top: 20%;
-  left: -30%;
-  position: absolute;
-  content: "";
-  border-radius: 50%;
-  height: 300px;
-  width: 300px;
-  background-color: rgb(255, 129, 129);
-}
-
-.rohit_img_1::after {
-  bottom: -20%;
-  right: -30%;
-  position: absolute;
-  content: "";
-  border-radius: 50%;
-  height: 300px;
-  width: 300px;
-  background-color: rgb(255, 255, 109);
-}
-
-.rohit_img_1 img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-}
-
-.rohit_img_1 img.github_logo,
-.rohit_img_1 img.linkedin_logo,
-.rohit_img_1 img.twitter_logo,
-.rohit_img_1 img.codechef_logo,
-.rohit_img_1 img.codeforces_logo,
-.rohit_img_1 img.leetcode_logo
-{
-    position: absolute;
-    height: 70px;
-    width: 70px;
-    border-radius: 20%; 
-    animation: shake 4s;
-    animation-iteration-count: infinite; 
-}
-
-.rohit_img_1 img.github_logo{
-    top: -45px;
-    background-color: orange;
-    animation-delay: .2s;
-}
-
-.rohit_img_1 img.linkedin_logo{
-    top: 10px;
-    left: -130px;
-    background-color: pink;
-}
-
-.rohit_img_1 img.twitter_logo{
-    top: 130px;
-    left: -200px;
-    background-color: #f46b45;
-    animation-delay: .2s;
-}
-
-.rohit_img_1 img.codeforces_logo{
-    top: -45px;
-    left: 144px;
-    background-color: #f46b45;
-}
-
-.rohit_img_1 img.codechef_logo{
-    top: 10px;
-    left: 275px;
-    background-color: #f46b45;
-    animation-delay: .2s;
-}
-
-.rohit_img_1 img.leetcode_logo{
-    top: 264px;
-    left: -194px;
-    background-color: #3a3230;
-    animation-delay: .2s;
-}
-
-
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
-.rohit_profile_img {
-  height: 120px;
-  width: 100%;
-}
-
-.rohit_profile_img img {
-    width: 120px;
-  background-color: grey;
-  border-radius: 50%;
-}
-
-.main_headline {
-  font-size: 20px;
-  font-family: 'Press Start 2P', cursive;
-  background: #FF4E50;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.rohit_name {
-    font-size: 2.5rem;
-    font-family: 'Press Start 2P', cursive;
-    background: #f46b45;
-    background: linear-gradient(to right, #eea849, #f46b45);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 900;
-    letter-spacing: 0.1em;
-}
-
-.card {
-  backdrop-filter: blur(2px) saturate(137%);
-  -webkit-backdrop-filter: blur(2px) saturate(137%);
-  background-color: rgba(255, 255, 255, 0.12);
-  border-radius: 12px;
-  border: 0px solid rgba(209, 213, 219, 0.3);
 }
