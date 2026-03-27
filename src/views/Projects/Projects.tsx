@@ -6,100 +6,58 @@ import { resumeData } from "../../data/resume";
 import "./Projects.css";
 
 const Projects = () => {
-  const [caseStudy, ...highlights] = resumeData.featuredWork;
+  const [caseStudy] = resumeData.featuredWork;
+  const additionalProjects = resumeData.additionalProjects;
 
   return (
     <main className="projects-page">
-      <section className="projects-hero surface-panel">
-        <p className="section-kicker">Selected Work</p>
-        <h1 className="section-title">Projects and platform highlights</h1>
-        <p className="projects-intro">
-          A text-first view of the systems, APIs, and AI-native products behind
-          the resume. The emphasis here is architecture, delivery rigor, and
-          measurable production impact.
-        </p>
-      </section>
-
       <section className="content-section">
         <div className="section-heading">
-          <p className="section-kicker">Case Study</p>
-          <h2 className="section-title">{caseStudy.title}</h2>
+          <p className="section-kicker">Project Archive</p>
+          <h2 className="section-title">Additional Useful and fun Projects</h2>
         </div>
 
-        <article className="case-study surface-panel">
-          <div className="case-study-header">
-            <div>
-              <p className="featured-meta">
-                {caseStudy.category} | {caseStudy.period}
-              </p>
-              <p className="featured-summary">{caseStudy.summary}</p>
-            </div>
-            <div className="outcome-list">
-              {caseStudy.outcomes.map((outcome) => (
-                <span className="outcome-pill" key={outcome}>
-                  {outcome}
-                </span>
-              ))}
-            </div>
-          </div>
+        <div className="project-archive-grid">
+          {additionalProjects.map((project) => (
+            <article className="project-archive-card surface-panel" key={project.id}>
+              <div className="project-archive-top">
+                <div>
+                  <p className="card-label">Personal Project</p>
+                  <h3 className="project-archive-title">{project.name}</h3>
+                </div>
 
-          <div className="case-study-grid">
-            <div>
-              <h3 className="results-title">Highlights</h3>
-              <ul className="bullet-list">
-                {caseStudy.bullets.map((bullet) => (
-                  <li key={bullet}>{bullet}</li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="results-title">Core stack</h3>
-              <div className="stack-list">
-                {caseStudy.stack.map((tech) => (
-                  <span className="pill" key={tech}>
-                    {tech}
-                  </span>
-                ))}
+                <div className="project-link-row">
+                  <a
+                    className="text-link"
+                    href={project.github}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    className="text-link"
+                    href={project.demo}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Live Demo
+                  </a>
+                </div>
               </div>
-            </div>
-          </div>
-        </article>
-      </section>
 
-      <section className="content-section">
-        <div className="section-heading">
-          <p className="section-kicker">Professional Highlights</p>
-          <h2 className="section-title">Production systems shipped at Infosys</h2>
-        </div>
-
-        <div className="highlight-grid">
-          {highlights.map((item) => (
-            <article className="highlight-card surface-panel" key={item.id}>
-              <p className="card-label">
-                {item.category} | {item.period}
-              </p>
-              <h3 className="highlight-title">{item.title}</h3>
-              <p className="highlight-summary">{item.summary}</p>
+              <p className="project-archive-summary">{project.summary}</p>
 
               <ul className="bullet-list compact-list">
-                {item.bullets.map((bullet) => (
+                {project.bullets.map((bullet) => (
                   <li key={bullet}>{bullet}</li>
                 ))}
               </ul>
 
               <div className="stack-list">
-                {item.stack.map((tech) => (
+                {project.stack.map((tech) => (
                   <span className="tag" key={tech}>
                     {tech}
-                  </span>
-                ))}
-              </div>
-
-              <div className="outcome-list">
-                {item.outcomes.map((outcome) => (
-                  <span className="outcome-pill" key={outcome}>
-                    {outcome}
                   </span>
                 ))}
               </div>

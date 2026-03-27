@@ -10,8 +10,6 @@
   --bg: #07111f;
   --bg-strong: #101b31;
   --panel: rgba(11, 22, 41, 0.78);
-  --panel-strong: rgba(15, 28, 52, 0.94);
-  --panel-soft: rgba(13, 30, 55, 0.64);
   --border: rgba(148, 163, 184, 0.16);
   --text-primary: #f4f7fb;
   --text-secondary: #c5d0df;
@@ -21,7 +19,6 @@
   --accent-strong: #fde68a;
   --shadow: 0 28px 80px rgba(0, 0, 0, 0.3);
   --radius-lg: 28px;
-  --radius-md: 18px;
   --font-display: "Space Grotesk", sans-serif;
   --font-body: "IBM Plex Sans", sans-serif;
 }
@@ -121,8 +118,7 @@ select {
 
 .pill,
 .tag,
-.outcome-pill,
-.social-link {
+.outcome-pill {
   display: inline-flex;
   align-items: center;
   border-radius: 999px;
@@ -219,16 +215,10 @@ select {
 .primary-action:hover,
 .secondary-action:hover,
 .text-link:hover,
-.social-link:hover,
 .pill:hover,
 .tag:hover,
 .outcome-pill:hover {
   transform: translateY(-1px);
-}
-
-.social-link {
-  padding: 0.55rem 0.9rem;
-  color: var(--text-secondary);
 }
 
 .featured-meta,
